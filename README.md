@@ -45,7 +45,10 @@ MentorMenteeDashboard/
 ```
 
 ## Contributors
-- [Your Name]
+- Kushal Shah
+- Aadit Nair
+- Meet Kothari
+- Soham Mistry
 
 ## License
 This project is licensed under the MIT License.
