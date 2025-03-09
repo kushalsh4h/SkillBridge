@@ -28,7 +28,19 @@ This is a mentor-mentee dashboard designed to facilitate mentorship connections 
    ```
 
 ## Screenshots
-(Add screenshots here)
+![image](https://github.com/user-attachments/assets/b9190907-3143-4502-b221-e7b5a7e7f15b) <br><br>
+![image](https://github.com/user-attachments/assets/7adc2221-6ab5-4e56-a10f-d3e13690099e) <br><br>
+![image](https://github.com/user-attachments/assets/386f98b9-c781-4c25-ac5e-e13b86ca492e) <br><br>
+![image](https://github.com/user-attachments/assets/23d76957-d675-4738-8b92-5c6fe2571e56) <br><br>
+![image](https://github.com/user-attachments/assets/126c01cd-15f1-48ec-8fdf-bbc009cf8f09) <br><br>
+![image](https://github.com/user-attachments/assets/b12ea2bb-0208-4000-8688-3e87df4dba74) <br><br>
+![image](https://github.com/user-attachments/assets/11a4d3e8-0738-4480-a68e-c825ee71d268) <br><br>
+![image](https://github.com/user-attachments/assets/13962b68-6f23-41da-8fff-9bf8be0aede9) <br><br>
+![image](https://github.com/user-attachments/assets/c9c8e5f8-f65a-42f5-a1b3-636d8eb7c58f) <br><br>
+![image](https://github.com/user-attachments/assets/8ed46697-3460-4118-997a-f8fff4e7230e) <br><br>
+![image](https://github.com/user-attachments/assets/a713a6fd-1af5-4461-922a-d912878c3669) <br><br>
+
+
 
 ## Folder Structure
 ```
