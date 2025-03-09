@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session Confirmed</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #2c1a15;
+        color: white;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .confirmation-box {
+        background: #3e2723;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        width: 50%;
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      h2 {
+        color: #fb5c44;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+      }
+
+      .btn-container {
+        margin-top: 20px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 20px;
+        margin: 5px;
+        background: #fb5c44;
+        color: white;
+        font-weight: bold;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background 0.3s ease;
+        border: none;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background: #d94a36;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="confirmation-box">
+      <h2>✅ Session Booked Successfully!</h2>
+      <p><strong>Mentor:</strong> <span id="mentor-name"></span></p>
+      <p><strong>Date:</strong> <span id="session-date"></span></p>
+      <p><strong>Time:</strong> <span id="session-time"></span></p>
+
+      <div class="btn-container">
+        <a href="index.html" class="btn">🏠 Back to Home</a>
+        <a href="schedule.html" class="btn">🔄 Reschedule</a>
+        <a href="screen5.html" class="btn">🎥 Start a Meet</a>
+        <button class="btn" onclick="downloadPDF()">📄 Download as PDF</button>
+      </div>
+    </div>
+
+    <script>
+      // Retrieve session details from localStorage
+      const mentor = localStorage.getItem("mentor") || "Not Provided";
+      const date = localStorage.getItem("date") || "Not Provided";
+      const time = localStorage.getItem("time") || "Not Provided";
+
+      // Display the values on the page
+      document.getElementById("mentor-name").textContent = mentor;
+      document.getElementById("session-date").textContent = date;
+      document.getElementById("session-time").textContent = time;
+
+      function downloadPDF() {
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF();
+
+        doc.setFont("helvetica", "bold");
+        doc.setFontSize(22);
+        doc.text("Session Confirmation", 20, 20);
+
+        doc.setFont("helvetica", "normal");
+        doc.setFontSize(16);
+        doc.text(`Mentor: ${mentor}`, 20, 40);
+        doc.text(`Date: ${date}`, 20, 50);
+        doc.text(`Time: ${time}`, 20, 60);
+
+        doc.save("Session_Confirmation.pdf");
+      }
+    </script>
+  </body>
+</html>

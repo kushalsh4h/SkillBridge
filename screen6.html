@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Career Path Suggester</title>
+    <style>
+      body {
+        background-color: #121212;
+        color: white;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        position: relative;
+      }
+      .back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: #fc5c44;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .back-button:hover {
+        opacity: 0.8;
+      }
+      .container {
+        background: #1e1e1e;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+        text-align: center;
+      }
+      .image-container img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      button {
+        background-color: #fc5c44;
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      button:hover {
+        opacity: 0.8;
+      }
+    </style>
+    <script>
+      function startCareerScript() {
+        fetch("http://127.0.0.1:5000/start-carrerpath")
+          .then((response) => response.text())
+          .then((data) => alert(data))
+          .catch((error) => alert("Error starting script: " + error));
+      }
+    </script>
+  </head>
+  <body>
+    <button class="back-button" onclick="window.location.href='index.html'">
+      Back to Home
+    </button>
+
+    <div class="container">
+      <h2>Career Path Suggester</h2>
+      <div class="image-container">
+        <img src="image2.png" alt="Career Path UI" />
+      </div>
+      <p>Click the button below to generate a career path suggestion.</p>
+      <button onclick="startCareerScript()">Get Career Path</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillBridge - Connect with Mentors</title>
+    <style>
+      body {
+        background: url("background.jpg") no-repeat center center fixed;
+        background-size: cover;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        background: rgba(20, 20, 20, 0.9);
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fc5c44;
+      }
+      .navbar .nav-links {
+        display: flex;
+        gap: 15px;
+      }
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 8px 12px;
+      }
+      .nav-links a:hover {
+        background: #fc5c44;
+        border-radius: 5px;
+      }
+      .container {
+        text-align: center;
+        padding: 50px 20px;
+      }
+      .button {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        background-color: #fc5c44;
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: 10px;
+      }
+      .button:hover {
+        opacity: 0.8;
+      }
+      .testimonials {
+        background: rgba(30, 30, 30, 0.9);
+        padding: 20px;
+        margin: 20px auto;
+        border-radius: 10px;
+        width: 80%;
+        overflow: hidden;
+        position: relative;
+        white-space: nowrap;
+      }
+      .testimonial-box {
+        background: rgba(50, 50, 50, 0.9);
+        padding: 15px;
+        margin: 10px;
+        border-radius: 8px;
+        text-align: center;
+        display: inline-block;
+        width: 300px;
+      }
+      .testimonial-text {
+        font-style: italic;
+      }
+      .marquee {
+        display: flex;
+        animation: scroll 15s linear infinite;
+        width: max-content;
+      }
+      @keyframes scroll {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+      .footer {
+        text-align: center;
+        padding: 10px;
+        background: rgba(20, 20, 20, 0.9);
+      }
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 300px;
+        margin: 0 auto;
+        background: rgba(50, 50, 50, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        font-size: 14px;
+      }
+      .contact-form button {
+        background-color: #fc5c44;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">SkillBridge</div>
+      <div class="nav-links">
+        <a href="login.html">Log In</a>
+        <a href="signup.html">Sign Up</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>Welcome to SkillBridge</h1>
+      <p>Connecting mentors and mentees to accelerate learning and growth.</p>
+      <button class="button" onclick="location.href='login.html'">
+        Log In
+      </button>
+      <button class="button" onclick="location.href='signup.html'">
+        Sign Up
+      </button>
+    </div>
+
+    <div class="testimonials">
+      <h2>What Our Users Say</h2>
+      <div class="marquee">
+        <div class="testimonial-box">
+          <p class="testimonial-text">
+            "SkillBridge helped me find the perfect mentor for my career!" -
+            Alex R.
+          </p>
+        </div>
+        <div class="testimonial-box">
+          <p class="testimonial-text">
+            "The best platform for professional guidance and learning." - Sarah
+            M.
+          </p>
+        </div>
+        <div class="testimonial-box">
+          <p class="testimonial-text">
+            "A seamless experience connecting with industry experts." - John D.
+          </p>
+        </div>
+        <div class="testimonial-box">
+          <p class="testimonial-text">
+            "I gained invaluable knowledge from my mentor here." - Lisa K.
+          </p>
+        </div>
+        <div class="testimonial-box">
+          <p class="testimonial-text">
+            "This platform truly bridges the gap between learning and success."
+            - Michael T.
+          </p>
+        </div>
+        <div class="testimonial-box">
+          <p class="testimonial-text">
+            "Highly recommended for anyone seeking career growth!" - Emily W.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact">
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <div class="footer">&copy; 2025 SkillBridge. All rights reserved.</div>
+  </body>
+</html>

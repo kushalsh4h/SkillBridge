@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resource Upload</title>
+    <style>
+      body {
+        background-color: #121212;
+        color: white;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        position: relative;
+      }
+      .back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: #fc5c44;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .back-button:hover {
+        opacity: 0.8;
+      }
+      .container {
+        background: #1e1e1e;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+        text-align: center;
+        width: 80%;
+        max-width: 600px;
+      }
+      .image-container img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .upload-btn {
+        background-color: #fc5c44;
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      .upload-btn:hover {
+        opacity: 0.8;
+      }
+    </style>
+    <script>
+      function uploadFile() {
+        fetch("http://127.0.0.1:5000/start-resource")
+          .then((response) => response.text())
+          .then((data) => alert(data))
+          .catch((error) => alert("Error starting script: " + error));
+      }
+    </script>
+  </head>
+  <body>
+    <button class="back-button" onclick="window.location.href='index.html'">
+      Back to Home
+    </button>
+
+    <div class="container">
+      <h2>Upload Your Resources</h2>
+      <div class="image-container">
+        <img src="image3.png" alt="Upload Interface" />
+      </div>
+      <p>Upload files up to 4GB and share them easily.</p>
+      <button class="upload-btn" onclick="uploadFile()">Upload File</button>
+    </div>
+  </body>
+</html>

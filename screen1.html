@@ -1,0 +1,170 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
+    <title>SkillBridge</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="style.css" />
+    n
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-[#231210] dark group/design-root overflow-x-hidden"
+      style="
+        --radio-dot-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(251,92,68)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3ccircle cx=%278%27 cy=%278%27 r=%273%27/%3e%3c/svg%3e');
+        font-family: Manrope, 'Noto Sans', sans-serif;
+      "
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header
+          class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#4a2721] px-10 py-3"
+        >
+          <div class="flex items-center gap-4 text-white">
+            <div class="size-4">
+              <svg
+                viewBox="0 0 48 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <h2
+              class="text-white text-lg font-bold leading-tight tracking-[-0.015em]"
+            >
+              SkillBridge
+            </h2>
+          </div>
+          <button
+            class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#fb5c44] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+          >
+            <span class="truncate">Log in</span>
+          </button>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div
+            class="layout-content-container flex flex-col w-[512px] max-w-[512px] py-5 max-w-[960px] flex-1"
+          >
+            <div class="flex flex-col gap-3 p-4">
+              <div class="flex gap-6 justify-between">
+                <p class="text-white text-base font-medium leading-normal">
+                  Onboarding
+                </p>
+              </div>
+              <div class="rounded bg-[#6a372f]">
+                <div class="h-2 rounded bg-[#fb5c44]" style="width: 25%"></div>
+              </div>
+              <p class="text-[#cc978e] text-sm font-normal leading-normal">
+                Step 1 of 4
+              </p>
+            </div>
+            <h1
+              class="text-white tracking-light text-[32px] font-bold leading-tight px-4 text-left pb-3 pt-6"
+            >
+              What type of mentorship are you looking for?
+            </h1>
+            <p
+              class="text-white text-base font-normal leading-normal pb-3 pt-1 px-4"
+            >
+              We'll use this to recommend the best path for getting started.
+            </p>
+            <h2
+              class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 text-left pb-2 pt-4"
+            >
+              Mentorship type
+            </h2>
+            <div class="flex flex-col gap-3 p-4">
+              <label
+                class="flex items-center gap-4 rounded-xl border border-solid border-[#6a372f] p-[15px] flex-row-reverse"
+              >
+                <input
+                  type="radio"
+                  class="h-5 w-5 border-2 border-[#6a372f] bg-transparent text-transparent checked:border-[#fb5c44] checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0 checked:focus:border-[#fb5c44]"
+                  name="4f16a4e9-62eb-4bf7-9497-c8f59b10c666"
+                  checked=""
+                />
+                <div class="flex grow flex-col">
+                  <p class="text-white text-sm font-medium leading-normal">
+                    Career development
+                  </p>
+                </div>
+              </label>
+              <label
+                class="flex items-center gap-4 rounded-xl border border-solid border-[#6a372f] p-[15px] flex-row-reverse"
+              >
+                <input
+                  type="radio"
+                  class="h-5 w-5 border-2 border-[#6a372f] bg-transparent text-transparent checked:border-[#fb5c44] checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0 checked:focus:border-[#fb5c44]"
+                  name="4f16a4e9-62eb-4bf7-9497-c8f59b10c666"
+                />
+                <div class="flex grow flex-col">
+                  <p class="text-white text-sm font-medium leading-normal">
+                    Skill building
+                  </p>
+                </div>
+              </label>
+              <label
+                class="flex items-center gap-4 rounded-xl border border-solid border-[#6a372f] p-[15px] flex-row-reverse"
+              >
+                <input
+                  type="radio"
+                  class="h-5 w-5 border-2 border-[#6a372f] bg-transparent text-transparent checked:border-[#fb5c44] checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0 checked:focus:border-[#fb5c44]"
+                  name="4f16a4e9-62eb-4bf7-9497-c8f59b10c666"
+                />
+                <div class="flex grow flex-col">
+                  <p class="text-white text-sm font-medium leading-normal">
+                    Job search
+                  </p>
+                </div>
+              </label>
+              <label
+                class="flex items-center gap-4 rounded-xl border border-solid border-[#6a372f] p-[15px] flex-row-reverse"
+              >
+                <input
+                  type="radio"
+                  class="h-5 w-5 border-2 border-[#6a372f] bg-transparent text-transparent checked:border-[#fb5c44] checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0 checked:focus:border-[#fb5c44]"
+                  name="4f16a4e9-62eb-4bf7-9497-c8f59b10c666"
+                />
+                <div class="flex grow flex-col">
+                  <p class="text-white text-sm font-medium leading-normal">
+                    Career change
+                  </p>
+                </div>
+              </label>
+              <label
+                class="flex items-center gap-4 rounded-xl border border-solid border-[#6a372f] p-[15px] flex-row-reverse"
+              >
+                <input
+                  type="radio"
+                  class="h-5 w-5 border-2 border-[#6a372f] bg-transparent text-transparent checked:border-[#fb5c44] checked:bg-[image:--radio-dot-svg] focus:outline-none focus:ring-0 focus:ring-offset-0 checked:focus:border-[#fb5c44]"
+                  name="4f16a4e9-62eb-4bf7-9497-c8f59b10c666"
+                />
+                <div class="flex grow flex-col">
+                  <p class="text-white text-sm font-medium leading-normal">
+                    Other
+                  </p>
+                </div>
+              </label>
+            </div>
+            <div class="flex px-4 py-3 justify-end">
+              <a class="but" href="./screen2.html">Continue</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
